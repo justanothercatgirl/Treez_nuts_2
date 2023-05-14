@@ -1,7 +1,6 @@
 #include <iostream>
 #include "Trees/tree.h"
 
-
 int main(int argc, char *argv[])
 {
 	using namespace Trees;
@@ -10,3 +9,5 @@ int main(int argc, char *argv[])
 	t.print_recursively();
 
 }
+
+// cd / d D : / Programming / Git, cmake and linking / project0

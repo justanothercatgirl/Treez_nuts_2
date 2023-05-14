@@ -6,7 +6,7 @@
 #include <queue>
 #include <stack>
 
-// DEFINITIONS
+#pragma region DEFINITION
 namespace Trees
 {
 
@@ -47,9 +47,9 @@ namespace Trees
 
 
 } //namnespace trees
+#pragma endregion DEFINITION
 
-
-// IMPLEMENTATIONS
+#pragma region IMPLEMENTATION
 namespace Trees
 {
 
@@ -146,5 +146,6 @@ namespace Trees
     }
 
 } //namespace Trees
+#pragma endregion IMPLEMENTATION
 
 #endif //TREE_JSCTGRL_H
