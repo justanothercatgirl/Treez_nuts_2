@@ -1,7 +1,6 @@
 #cd /d D:/Programming/Git, cmake and linking/project0
 
-
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.22)
 
 function(Test_function required_arg)
 
@@ -23,6 +22,7 @@ Test_function("Penis argument")
 add_subdirectory(Trees)
 add_executable(prog main.cpp)
 target_link_libraries(prog PUBLIC Trees)
+target_compile_features(prog PUBLIC cxx_std_20)
 
 #turn on optimization 3 only for release build
 target_compile_options(prog PRIVATE "$<$<CONFIG:Release>:-O3>")
