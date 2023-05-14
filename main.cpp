@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Trees/tree.h"
+#include "Trees/tree.hpp"
 
 int main(int argc, char *argv[])
 {
