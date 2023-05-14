@@ -1,5 +1,6 @@
 #cd /d D:/Programming/Git, cmake and linking/project0
 
+
 cmake_minimum_required(VERSION 3.12)
 
 function(Test_function required_arg)
@@ -17,12 +18,9 @@ function(Test_function required_arg)
 endfunction()
 
 project(project0 DESCRIPTION "first cmake project" LANGUAGES CXX)
-
-set(TREE_SOURCES Trees/tree.h Trees/tree.cpp)
-add_library(Trees STATIC ${TREE_SOURCES})
-
 Test_function("Penis argument")
 
+add_subdirectory(Trees)
 add_executable(prog main.cpp)
 target_link_libraries(prog PUBLIC Trees)
 
